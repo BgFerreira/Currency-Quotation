@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title></title>
+
+    <link rel="stylesheet" href="./public/css/index.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+
+<body>
+    <main>
+        <h1 id="header">Currency Quotation</h1>
+
+        <div class="container">
+            <div class="input-area">
+                <label for="currency1">Currency:</label>
+                <select name="currency1" id="currency1">
+                    <option value="BRL">Brazillian Real (BRL)</option>
+                    <option selected="true" value="USD">American Dollar (USD)</option>
+                    <option value="EUR">Euro (EUR)</option>       
+                </select>
+            </div>
+
+            <span id="swap-button" class="material-icons">swap_horiz</span>
+
+            <div class="input-area">
+                <label for="currency2">Compare with:</label>
+                <select name="currenc2" id="currency2">
+                    <option selected="true" value="BRL">Brazillian Real (BRL)</option>
+                    <option value="USD">American Dollar (USD)</option>
+                    <option value="EUR">Euro (EUR)</option>
+                </select>
+            </div>
+        </div>
+
+        <!--Aqui será exibido a tabela da moeda-->
+        <div id="last-output"></div>
+
+        <div class="container">
+            <div class="input-area">
+                <label for="start-date">Start Date:</label>
+                <input type="date" name="start-date" id="start-date" value="none" />
+            </div>
+
+            <div class="input-area">
+                <label for="start-date">End Date:</label>
+                <input type="date" name="end-date" id="end-date" value="none" />
+            </div>
+        </div>
+
+        <button id="period-button">Show Period</button>
+    </main>
+
+    <!--Aqui será exibido a lista das cotações-->
+    <div id="period-output"></div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./public/js/index.js"></script>
+</body>
+
+</html>

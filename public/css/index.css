@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: rgb(66, 67, 68);
+    color: rgb(231, 105, 59);
+    font-size: 18px;
+    height: 100%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    width: 100%;
+    height: 60px;
+    font-size: 36px;
+    text-align: center;
+    padding: 1% 0;
+    margin: 0 auto 4% auto;
+    background-color: rgb(47, 47, 48);
+}
+
+.container {
+    display: flex;
+    width: 980px;
+    justify-content: space-between;
+    margin: 1% auto 1% auto;
+}
+
+.input-area {
+    width: 33%;
+    display: inline-flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+}
+
+select, input {
+    width: 100%;
+    margin: 2% 0;
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 66px;
+    border: solid rgb(231, 105, 59);
+    color: rgb(231, 105, 59);
+    background-color: rgb(47, 47, 48);
+}
+
+#swap-button {
+    user-select: none;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    align-self: flex-end;
+    cursor: pointer;
+    justify-content: center;
+    font-size: 64px;
+    height: 75px;
+    width: 75px;
+    transition: 0.3s;
+}
+
+#swap-button:hover{
+    transform: scale(1.1);
+    background-color: rgba(150, 44, 97, 0.4);
+}
+
+button {
+    cursor: pointer;
+    margin: 3% auto 2% auto;
+    padding: 15px 30px;
+    font-size: 22px;
+    font-weight: bold;
+    border-radius: 66px;
+    color: rgb(47, 47, 48);
+    background-color: rgb(231, 105, 59);
+    border: solid rgb(47, 47, 48);
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.1);
+    background-color: rgb(150, 44, 97);
+    color: rgb(202, 202, 202);
+    border: solid rgb(202, 202, 202);
+}
+
+#last-output, #period-output {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 980px;
+    font-size: 28px;
+    font-weight: bold;
+    margin: 2% auto;
+}
+
+caption {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 1% 2%;
+    background-color: rgb(47, 47, 48);
+    border-right: solid;
+    border-left: solid;
+    border-top: solid;
+    padding: 2% 0;
+}
+
+table {
+    width: 90%;
+    border: solid;
+    text-align: left;
+}
+
+th, td {
+    font-size: 22px;
+    padding: 1% 2%;
+}
+
+td {
+    border-left: solid;
+}
+
+tr:nth-child(even) {
+    background-color: rgb(47, 47, 48);
+}
+
+#period-output {
+    display: flex;
+    flex-direction: column;
+}
+
+#loading {
+    width: 100px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin{
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
